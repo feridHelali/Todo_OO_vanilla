@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+.app__body{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_title{
+    font-size: 2rem;
+    padding: 20px;
+    margin: 3px;
+}
+
+.app__search{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+}
+
+.app__search__form{
+    display: flex;
+    justify-content: space-between;
+}
+.app__search__form > input{
+    outline: none;
+    background-color: rgba(239, 233, 233, 0.602);
+    border-radius: 999px;
+    padding: 5px;
+
+}
+.app__search__form > input{
+    outline: none;
+
+}
+
+.app_todolist__body{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: lightgray;
+    margin: 2px;
+
+}
+
+.todolist__options{
+    display: flex;
+    justify-content: space-evenly;
+    padding:4px;
+    margin:3px;
+}
+
+.todolist__options > button{
+    padding: 3px;
+    background-color: lightblue;
+    color:bleu;
+    border: none;
+    border-radius: 15px;
+}

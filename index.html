@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="app__body">
+    <div class="app__title">Todo List APP</div>
+    <div class="app__search">
+      <form class="app__search__form">
+        <input
+        id="add_input"
+        type="text"
+        required
+        max="100"
+        placeholder="Type your task todo here...">
+      </form>
+      <button id="add_button">Add</button>
+    </div>
+    <div >
+      <table>
+        <thead>
+          <th>#</th>
+          <th>Label</th>
+          <th>Actions</th>
+        </thead>
+        <tbody  id="todo_output" class="todolist__body">
+         
+        </tbody>
+  
+      </table>
+    </div>
+    <div class="todolist__options">
+      <button id="not_done_button">Not yet Done</button>
+      <button id="completed_button">Completed</button>
+      <button id="all_todos">All Todos</button>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>
