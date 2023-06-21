@@ -9,13 +9,16 @@ todoModel.registerView(todoListView)
 console.log(todoModel)
 
 
-todoListView.addTodo.addEventListener('click',(e)=>{
-    let newTodo={
-        id:todoModel.todoList.length+1,
-        label:todoListView.addInput.value,
-        done:false
+todoListView.addTodo.addEventListener('click', (e) => {
+    e.preventDefault()
+    let newTodo = {
+        id: todoModel.todoList.length + 1,
+        label: todoListView.addInput.value,
+        done: false
     }
     todoModel.addTodo(newTodo)
+    todoListView.attachListenerToTodoLines(todoModel)
+
 })
 
 

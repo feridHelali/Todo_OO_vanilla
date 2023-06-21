@@ -13,26 +13,21 @@
     <div class="app__title">Todo List APP</div>
     <div class="app__addtodo">
       <form class="app__addtodo__form">
-        <input
-        id="add_input"
-        type="text"
-        required
-        max="100"
-        placeholder="Type your task todo here...">
+        <input id="add_input" type="text" required max="100" placeholder="Type your task todo here...">
+        <input type="submit" id="add__todo__button" value="Add new Todo">
       </form>
-      <button id="add__todo__button">Add</button>
     </div>
-    <div >
-      <table>
+    <div>
+      <table class="todo__table">
         <thead>
-          <th>#</th>
-          <th>Label</th>
-          <th>Actions</th>
+          <th class="todo__table__head">#</th>
+          <th class="todo__table__head">Label</th>
+          <th class="todo__table__head">Actions</th>
         </thead>
-        <tbody  id="todo_output" class="todolist__body">
-         
+        <tbody id="todo_output" class="todolist__body">
+
         </tbody>
-  
+
       </table>
     </div>
     <div class="todolist__options">

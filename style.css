@@ -1,8 +1,9 @@
-body{
+body * {
+    padding: 0;
     margin: 0;
 }
 
-.app__body{
+.app__body {
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -11,37 +12,64 @@ body{
     justify-content: center;
 }
 
-.app_title{
-    font-size: 2rem;
+.app__title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
     padding: 20px;
     margin: 3px;
+    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke-color: rgb(14, 132, 235);
+    -webkit-text-stroke-width: 1px;
+    color: wheat;
+
 }
 
-.app__search{
-    justify-content: center;
+.app__addtodo {
     display: flex;
-    width: 100%;
-    height: 30px;
-    padding: 3px;
+    flex-direction: column;
+    gap: .5em;
+    padding: 5px;
+    margin: 2px;
+    border: none;
 }
 
-.app__search__form{
+.todo__table {
+    width: 500px;
+}
+
+.todo__table >thead{
+    width:100%;
+}
+
+.todo__table__head {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    margin:4px;
+    border-radius: 999px;
+}
+.todo__table__head > :nth-child(2){
+    width: 400px;
+}
+
+
+.app__addtodo__form {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
-.app__search__form > input{
+
+.app__addtodo__form >input {
     outline: none;
     background-color: rgba(239, 233, 233, 0.602);
     border-radius: 999px;
     padding: 5px;
-
-}
-.app__search__form > input{
-    outline: none;
+    cursor: pointer;
 
 }
 
-.app_todolist__body{
+
+.app_todolist__body {
     flex-grow: 1;
     padding: 20px;
     background-color: lightgray;
@@ -49,17 +77,39 @@ body{
 
 }
 
-.todolist__options{
+.todolist__options {
+    flex: 1;
     display: flex;
     justify-content: space-evenly;
-    padding:4px;
-    margin:3px;
+    padding: 4px;
+    margin: 3px;
+    gap: 3rem;
 }
 
-.todolist__options > button{
-    padding: 3px;
+.todolist__options>* {
+    flex:1 1 1;
+    margin:4px;
+    padding: 13px;
     background-color: lightblue;
-    color:bleu;
+    color: blue;
     border: none;
-    border-radius: 15px;
+    border-radius: 999px;
+
+}
+
+.todolist__options > *:hover {
+    flex:1 1 1;
+    margin:4px;
+    padding: 13px;
+    background-color: blue;
+    color: lightblue;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+
+}
+
+.actions{
+   display: flex;
+   justify-content: space-around;
 }
