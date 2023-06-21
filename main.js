@@ -1,17 +1,17 @@
 import TodoView from "./lib/todolist.view"
 import TodoListModel from "./lib/todolist.model"
 
-const todoModel = new TodoListModel()
-const todoListView = new TodoView()
+let todoModel = new TodoListModel()
+let todoListView = new TodoView()
 
 
-todoModel.registeView(todoListView)
+todoModel.registerView(todoListView)
 console.log(todoModel)
 
 
 todoListView.addTodo.addEventListener('click',(e)=>{
     let newTodo={
-        id:todoModel.todolist.length+1,
+        id:todoModel.todoList.length+1,
         label:todoListView.addInput.value,
         done:false
     }
